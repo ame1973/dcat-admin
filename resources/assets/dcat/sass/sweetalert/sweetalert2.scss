@@ -1,12 +1,10 @@
-.swal2-title {
-  font-weight: 400!important;
-}
+// SweetAlert2
+// github.com/sweetalert2/sweetalert2
 
-.swal2-actions .btn {
-  padding: 0.5rem 1.5rem !important;;
-}
+@import 'scss/theming';
+@import 'scss/animations';
 
-.swal2-container {
-  //z-index: 19891016;
-  z-index: 89891015!important;
+body {
+    @include sweetalert2-body();
+    @include sweetalert2-toasts-body();
 }
