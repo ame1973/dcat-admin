@@ -1,4 +1,17 @@
 
+> This is a fork of [dcat-admin](https://github.com/jqhph/dcat-admin) with some modifications.
+> 
+> I will try to keep it up to date with the original repository. If original repository has new features, I will merge it to this fork.
+> 
+> If you want to use this fork, please note that it is not supported by the original author.
+> 
+> If you want to use the original repository, please go to [dcat-admin](https://github.com/jqhph/dcat-admin).
+> 
+> Or you want to contribute to this fork, please pull request to this repository.
+> Thanks for your support.
+
+---
+
 <div align="center">
     <img src="https://cdn.learnku.com/uploads/images/202009/27/38389/WFQxJ7qZ1k.png!large" height="80"> 
 </div>
