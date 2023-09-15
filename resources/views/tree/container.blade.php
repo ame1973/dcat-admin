@@ -1,14 +1,16 @@
 <div class="card-header pb-1 with-border" style="padding:.9rem 1rem">
 
     <div>
-        <div class="btn-group" style="margin-right:3px">
-            <button class="btn btn-primary btn-sm {{ $id }}-tree-tools" data-action="expand">
-                <i class="feather icon-plus-square"></i>&nbsp;<span class="d-none d-sm-inline">{{ trans('admin.expand') }}</span>
-            </button>
-            <button class="btn btn-primary btn-sm {{ $id }}-tree-tools" data-action="collapse">
-                <i class="feather icon-minus-square"></i><span class="d-none d-sm-inline">&nbsp;{{ trans('admin.collapse') }}</span>
-            </button>
-        </div>
+        @if($useExpand)
+            <div class="btn-group" style="margin-right:3px">
+                <button class="btn btn-primary btn-sm {{ $id }}-tree-tools" data-action="expand">
+                    <i class="feather icon-plus-square"></i>&nbsp;<span class="d-none d-sm-inline">{{ trans('admin.expand') }}</span>
+                </button>
+                <button class="btn btn-primary btn-sm {{ $id }}-tree-tools" data-action="collapse">
+                    <i class="feather icon-minus-square"></i><span class="d-none d-sm-inline">&nbsp;{{ trans('admin.collapse') }}</span>
+                </button>
+            </div>
+        @endif
 
         @if($useSave)
             &nbsp;<div class="btn-group" style="margin-right:3px">

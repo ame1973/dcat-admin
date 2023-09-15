@@ -115,6 +115,11 @@ class Tree implements Renderable
     public $useRefresh = true;
 
     /**
+     * @var bool
+     */
+    public $useExpand = true;
+
+    /**
      * @var array
      */
     protected $nestableOptions = [];
@@ -269,6 +274,17 @@ class Tree implements Renderable
     public function expand(bool $value = true)
     {
         $this->expand = $value;
+    }
+
+    /**
+     * Disable create.
+     *
+     * @param  bool  $value
+     * @return void
+     */
+    public function disableExpandButton(bool $value = true)
+    {
+        $this->useExpand = ! $value;
     }
 
     /**
@@ -528,6 +544,7 @@ class Tree implements Renderable
             'useQuickCreate'  => $this->useQuickCreate,
             'useSave'         => $this->useSave,
             'useRefresh'      => $this->useRefresh,
+            'useExpand'       => $this->useExpand,
             'createButton'    => $this->renderCreateButton(),
             'nestableOptions' => $this->nestableOptions,
             'url'             => $this->url,
