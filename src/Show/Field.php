@@ -314,9 +314,13 @@ HTML;
     public function link($href = '', $target = '_blank')
     {
         return $this->unescape()->as(function ($link) use ($href, $target) {
-            $href = $href ?: $link;
+            if (null === $link) {
+                return '&nbsp;';
+            }
 
-            return "<a href='$href' target='{$target}'>{$link}</a>";
+            $linkHref = empty($href) ? $link : $href;
+
+            return sprintf("<a href='%s' target='%s'>%s</a>", $linkHref, $target, $link);
         });
     }
 
