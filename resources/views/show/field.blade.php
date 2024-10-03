@@ -1,5 +1,5 @@
 <div class="show-field form-group row">
-    <div class="col-sm-{{ $width['label'] }} control-label">
+    <div class="col-sm-{{ $width['label'] }}" style="padding-bottom: 6px; text-transform: capitalize;">
         <span>{{ $label }}</span>
     </div>
 
