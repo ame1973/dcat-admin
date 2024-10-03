@@ -70,6 +70,19 @@ class Row implements Renderable
     }
 
     /**
+     * Show the content of html.
+     *
+     * @param  string  $html
+     */
+    public function html($html = '')
+    {
+        $this->fields->push([
+            'width'   => $this->defaultFieldWidth,
+            'element' => new Html($html),
+        ]);
+    }
+
+    /**
      * Set width for a incomming field.
      *
      * @param  int  $width
