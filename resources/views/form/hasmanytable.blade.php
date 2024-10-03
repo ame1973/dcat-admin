@@ -2,8 +2,8 @@
     .table-has-many .input-group{flex-wrap: nowrap!important}
 </style>
 
-<div class="row form-group">
-    <div class="{{$viewClass['label']}} "><label class="control-label pull-right">{!! $label !!}</label></div>
+<div class="form-group">
+    <div class="{{$viewClass['label']}} "><label class="control-label">{!! $label !!}</label></div>
     <div class="{{$viewClass['field']}}">
         @include('admin::form.error')
 
